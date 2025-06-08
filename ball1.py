@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-cap = cv2.VideoCapture("/dev/Ball_Recognition/video2")
+cap = cv2.VideoCapture("/dev/video0")
 if not cap.isOpened():
     print("カメラが開けません")
     exit()
