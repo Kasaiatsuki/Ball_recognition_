@@ -22,3 +22,19 @@ sudo apt install python3-opencv
 git clone https://github.com/Kasaiatsuki/Ball_recognition_.git
 cd Ball_recognition_
 ```
+---
+# PCの内臓カメラやWEBカメラの動作確認
+```bash
+ls /dev/video*
+```
+出てきた番号を camera.py の
+```bash
+cap = cv2.VideoCapture()
+```
+の( )に入力してください。"/Ball_Recognition/video2"のように入力することも可能です.
+また、入力する番号は内臓カメラの場合は 0 か 1 が多くWEBカメラだと 2 の場合が多いです.
+```bash
+pytno3 camera.py
+```
+で実行するとGUIにカメラの映像が映ります.
+---
