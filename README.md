@@ -37,4 +37,5 @@ cap = cv2.VideoCapture()
 pytno3 camera.py
 ```
 で実行するとGUIにカメラの映像が映ります.
+
 ---
