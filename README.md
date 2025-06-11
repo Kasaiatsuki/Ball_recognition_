@@ -31,8 +31,9 @@ ls /dev/video*
 ```bash
 cap = cv2.VideoCapture()
 ```
-の( )に入力してください。"/Ball_Recognition/video2"のように入力することも可能です.
-また、入力する番号は内臓カメラの場合は 0 か 1 が多くWEBカメラだと 2 の場合が多いです.
+の( )に入力してください.
+* "/Ball_Recognition/video2"のように入力することも可能です.
+* 入力する番号は内臓カメラの場合は 0 か 1 が多くWEBカメラだと 2 の場合が多いです.
 ```bash
 pytno3 camera.py
 ```
@@ -47,7 +48,7 @@ python3 hsv.py
 ```
 HSVの閾値の調整タブ(Trackbars)をいじって自分の好きなボールのHSVの閾値を調節してください.
 
-![HSV](images/Screenshot%20from%202025-06-08%2022-29-23.png)
+![ZIKKOUREI](images/Screenshot%20from%202025-06-08%2022-29-23.png)
 
 ## トラックバーの意味
 
@@ -60,4 +61,17 @@ HSVの閾値の調整タブ(Trackbars)をいじって自分の好きなボール
 | US             | Upper Saturation | 色の鮮やかさの上限. 255でOKなことが多い                             |
 | UV             | Upper Value  | 明るさの上限. 255で問題ないことが多い                                |
 
+## 実行例
+![HSV](images/Screenshot%20from%202025-06-11%2015-19-00.png)
+
 ---
+# ボールの色認識
+
+```bash
+python3 ball1.py
+```
+* このプログラムは赤,青,黃色の3色のボールを同時に認識できるようになっています.
+* デフォルトではこの３色ですが色の閾値設定を増やせば認識できる色も増やすことができます.
+
+---
+
