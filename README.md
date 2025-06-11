@@ -83,7 +83,7 @@ vi calibraition.py
 ```
 * REAL_KIAMETERにボールの直径(cm),KNOWN_DISTANCEに実際のボールとカメラセンサの距離(cm)を入力してください.
 ## 実行例
-![zikkourei2](images/Screenshot%20from%202025-06-11%2015-19-00.png)
+![zikkourei2](images/Screenshot%20from%202025-06-11%2016-50-46.png)
 
 #　ボールとカメラとの距離測定
 
