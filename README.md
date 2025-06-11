@@ -1,4 +1,4 @@
-# ボールの色認識のセットアッププログラム
+# ボール認識のセットアップコード
 
 # 概要
 * Ball_recognition_ は以下の機能を提供します.
@@ -82,8 +82,16 @@ python3 ball1.py
 vi calibraition.py
 ```
 * REAL_KIAMETERにボールの直径(cm),KNOWN_DISTANCEに実際のボールとカメラセンサの距離(cm)を入力してください.
+* 代表点３個の値の平均値をとったほうが正確かも.(30cm,50cm,70cmなど)
+## 実行例
+![zikkourei３](images/Screenshot%20from%202025-06-11%2015-48-52.png)
+
+---
+
+# ボールとカメラとの距離測定
+```bash
+python3 ball_distance.py
+```
 ## 実行例
 ![zikkourei2](images/Screenshot%20from%202025-06-11%2016-50-46.png)
-
-#　ボールとカメラとの距離測定
 
