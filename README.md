@@ -48,7 +48,7 @@ python3 hsv.py
 ```
 HSVの閾値の調整タブ(Trackbars)をいじって自分の好きなボールのHSVの閾値を調節してください.
 
-![ZIKKOUREI](images/Screenshot%20from%202025-06-08%2022-29-23.png)
+![HSV](images/Screenshot%20from%202025-06-08%2022-29-23.png)
 
 ## トラックバーの意味
 
@@ -62,7 +62,7 @@ HSVの閾値の調整タブ(Trackbars)をいじって自分の好きなボール
 | UV             | Upper Value  | 明るさの上限. 255で問題ないことが多い                                |
 
 ## 実行例
-![HSV](images/Screenshot%20from%202025-06-11%2015-19-00.png)
+![zikkourei](images/Screenshot%20from%202025-06-11%2015-19-00.png)
 
 ---
 # ボールの色認識
@@ -74,4 +74,16 @@ python3 ball1.py
 * デフォルトではこの３色ですが色の閾値設定を増やせば認識できる色も増やすことができます.
 
 ---
+
+# カメラの適切な焦点距離の設定
+このコードは次のボールとカメラとの距離を測るコードに使う焦点距離を計算するコードです.
+
+```bash
+vi calibraition.py
+```
+* REAL_KIAMETERにボールの直径(cm),KNOWN_DISTANCEに実際のボールとカメラセンサの距離(cm)を入力してください.
+## 実行例
+![zikkourei2](images/Screenshot%20from%202025-06-11%2015-19-00.png)
+
+#　ボールとカメラとの距離測定
 
