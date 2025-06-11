@@ -4,8 +4,8 @@ import numpy as np
 def nothing(x):
     pass
 
-# カメラ or 動画ファイル（必要に応じて変更）
-cap = cv2.VideoCapture(0)  # または cap = cv2.VideoCapture("your_video.mp4")
+
+cap = cv2.VideoCapture(2)
 
 cv2.namedWindow("Trackbars")
 cv2.resizeWindow("Trackbars", 400, 300)
@@ -17,6 +17,13 @@ cv2.createTrackbar("LV", "Trackbars", 0, 255, nothing)
 cv2.createTrackbar("UH", "Trackbars", 179, 179, nothing)
 cv2.createTrackbar("US", "Trackbars", 255, 255, nothing)
 cv2.createTrackbar("UV", "Trackbars", 255, 255, nothing)
+
+cv2.namedWindow("Original", cv2.WINDOW_NORMAL)
+cv2.resizeWindow("Original", 640, 480)
+cv2.namedWindow("Mask", cv2.WINDOW_NORMAL)
+cv2.resizeWindow("Mask", 640, 480)
+cv2.namedWindow("Result", cv2.WINDOW_NORMAL)
+cv2.resizeWindow("Result", 640, 480)
 
 while True:
     ret, frame = cap.read()

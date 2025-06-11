@@ -36,10 +36,10 @@ while True:
     blurred = cv2.GaussianBlur(frame, (7, 7), 0)
     hsv = cv2.cvtColor(blurred, cv2.COLOR_BGR2HSV)
 
-    # 青色ボールに合わせたHSV範囲（調整済み）
-    lower_yellow = np.array([71, 142, 57])
-    upper_yellow = np.array([139, 255, 255])
-    mask = cv2.inRange(hsv, lower_yellow, upper_yellow)
+    # ボールの色に合わせたHSV範囲（調整済み）
+    lower_colour = np.array([164, 164, 56])
+    upper_colour= np.array([177, 255, 255])
+    mask = cv2.inRange(hsv, lower_colour, upper_colour)
 
     # ノイズ除去
     mask = cv2.erode(mask, None, iterations=1)
@@ -47,7 +47,7 @@ while True:
 
     detect_tennis_ball(mask, frame)
 
-    cv2.imshow("Blue Ball Detection", frame)
+    cv2.imshow(" Ball Detection", frame)
 
     if cv2.waitKey(1) & 0xFF == ord("q"):
         break

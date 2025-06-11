@@ -3,7 +3,7 @@ import numpy as np
 
 # テニスボール直径 [cm] と焦点距離 [ピクセル]
 REAL_DIAMETER = 6.7
-FOCAL_LENGTH = 1051.6  # ※これは仮値。キャリブレーションすればより正確に
+FOCAL_LENGTH = 1051.6  # ※キャリブレーションして求めた焦点距離を入力
 
 # カメラの起動（番号は必要に応じて変更）
 cap = cv2.VideoCapture(0)

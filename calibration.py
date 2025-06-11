@@ -6,7 +6,7 @@ REAL_DIAMETER = 6.5
 # 実距離：ボールとカメラの距離（cm）
 KNOWN_DISTANCE = 70.0  # ←あなたが実際に測った距離に変えてください！
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture("/dev/video2")
 if not cap.isOpened():
     print("カメラが開けません")
     exit()
@@ -20,8 +20,8 @@ while True:
     hsv = cv2.cvtColor(blurred, cv2.COLOR_BGR2HSV)
 
     # テニスボールの色範囲（必要に応じて調整）
-    lower_yellow = np.array([20, 52, 119])
-    upper_yellow = np.array([65, 255, 255])
+    lower_yellow = np.array([71, 142, 139])
+    upper_yellow = np.array([139, 255, 255])
     mask = cv2.inRange(hsv, lower_yellow, upper_yellow)
     mask = cv2.erode(mask, None, iterations=1)
     mask = cv2.dilate(mask, None, iterations=1)
