@@ -1,6 +1,6 @@
 import cv2
 
-cap = cv2.VideoCapture("/dev/Ball_Recognition/video2")
+cap = cv2.VideoCapture("/dev/video2")
 if not cap.isOpened():
     print("カメラが開けません")
     exit()
