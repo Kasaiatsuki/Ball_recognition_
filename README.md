@@ -105,6 +105,9 @@ python3 ball_distance.py
 ## 実行例
 ![zikkourei2](images/Screenshot%20from%202025-06-11%2016-50-46.png)
 
-
-
 ---
+
+# ライセンスと著作権
+
+* このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
+* © 2025 Atsuki Kasai
