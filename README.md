@@ -71,7 +71,7 @@ HSVの閾値の調整タブ(Trackbars)をいじって自分の好きなボール
 python3 ball1.py
 ```
 * このプログラムは赤,青,黃色の3色のボールを同時に認識できるようになっています.
-* デフォルトではこの３色ですが色の閾値設定を増やせば認識できる色も増やすことができます.
+* デフォルトではこの３色ですがHSVの閾値設定を増やせば認識できる色も増やすことができます.
 
 ---
 
@@ -82,6 +82,9 @@ python3 ball1.py
 vi calibraition.py
 ```
 * REAL_KIAMETERにボールの直径(cm),KNOWN_DISTANCEに実際のボールとカメラセンサの距離(cm)を入力してください.
+```bash
+python3 calibration.py
+```
 * 代表点３個の値の平均値をとったほうが正確かも.(30cm,50cm,70cmなど)
 ## 実行例
 ![zikkourei３](images/Screenshot%20from%202025-06-11%2015-48-52.png)
@@ -89,9 +92,19 @@ vi calibraition.py
 ---
 
 # ボールとカメラとの距離測定
+* このコードはボールとカメラの距離を測るコードです.
+* カメラの解像度にもよりますがうまくいくと5cm〜180cm以上の範囲で距離を測ることができます.
+```bash
+vi ball_distance.py
+```
+ボールの直径,カメラの焦点距離,HSV閾値設定を入力してください.
 ```bash
 python3 ball_distance.py
 ```
+
 ## 実行例
 ![zikkourei2](images/Screenshot%20from%202025-06-11%2016-50-46.png)
 
+
+
+---
